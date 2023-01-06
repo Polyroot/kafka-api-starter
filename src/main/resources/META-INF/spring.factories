@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=ru.polyroot.lib.kafka_api_starter.KafkaApiStarterConfig

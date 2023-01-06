@@ -1,0 +1,3 @@
+include:
+  - project: ${CI_PROJECT_ROOT_NAMESPACE}/${CI_CD_PROJECT_NAME}
+    file: 'gitlab-ci/maven-ci.yml'

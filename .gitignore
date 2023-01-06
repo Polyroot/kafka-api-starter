@@ -1,0 +1,10 @@
+# Idea
+.idea
+*.iws
+*.iml
+*.ipr
+out
+logs
+
+# Maven
+target

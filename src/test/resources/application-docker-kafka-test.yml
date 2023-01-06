@@ -1,0 +1,28 @@
+test:
+  kafka:
+    docker:
+      image:
+        dockerHub: ${TEST_KAFKA_DOCKER_IMAGE:confluentinc/cp-kafka:6.2.0}
+        url: ${TEST_KAFKA_DOCKER_IMAGE_URL:}
+
+# Spring
+spring:
+  application:
+    name: "kafka-lib"
+
+# Приложение
+app:
+  version: 123
+
+kafka:
+  producer:
+    bootstrap-address: X
+  admin:
+      auto-create-enable: false
+  consumer:
+    bootstrap-address: X
+    group-id: test
+    auto-offset-reset: earliest
+    enable-auto-commit: false
+  producer-enable: true
+  consumer-enable: true
